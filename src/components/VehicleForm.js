@@ -49,7 +49,7 @@ function VehicleForm() {
                         type="number"
                         id="year"
                         value={year}
-                        onChange={(e) => setYear(e.target.value)}
+                        onChange={(e) => e.target.value >= 0 ? setYear(e.target.value) : null}
                         required
                     />
                 </div>
@@ -69,7 +69,7 @@ function VehicleForm() {
                         type="number"
                         id="mileage"
                         value={mileage}
-                        onChange={(e) => setMileage(e.target.value)}
+                        onChange={(e) => e.target.value >= 0 ? setMileage(e.target.value): null}
                     />
                 </div>
                 <button type="submit" className='submit-btn'>Submit</button>
@@ -83,7 +83,7 @@ function VehicleForm() {
                 <div className="sample-listing">
                     <h2>Sample Listings</h2>
                     <div className="table-container">
-                    <table>
+                    <table class="styled-table">
                         <thead>
                             <tr>
                                 {Object.keys(sampleListing[0]).map((header) => (

@@ -12,10 +12,9 @@ function App() {
         <div className="vehicle-form-container">
           <VehicleForm />
         </div>
-        {/* ... (other sections remain the same) */}
       </main>
       <footer>
-        <p>&copy; 2023 VinAudit Take Home Project</p>
+        <p>&copy; 2023 VinAudit Pvt Ltd</p>
       </footer>
     </div>
   );
