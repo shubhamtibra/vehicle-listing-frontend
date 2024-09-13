@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import VehicleForm from './components/VehicleForm';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>VinAudit Vehicle Listing</h1>
       </header>
+      <main>
+        <div className="vehicle-form-container">
+          <VehicleForm />
+        </div>
+        {/* ... (other sections remain the same) */}
+      </main>
+      <footer>
+        <p>&copy; 2023 VinAudit Take Home Project</p>
+      </footer>
     </div>
   );
 }
